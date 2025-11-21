@@ -1,0 +1,148 @@
+#root {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+}
+
+.main-page {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.canvas-container {
+  width: 100%;
+  height: 100%;
+}
+
+.sentence-rain-canvas,
+.starfield-canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+
+/* 配置页面样式 */
+.config-page {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, #000428, #004e92);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.config-container {
+  width: 100%;
+  max-width: 500px;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  padding: 30px;
+  color: white;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+}
+
+.config-container h1 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.controls-panel {
+  margin-bottom: 30px;
+}
+
+.control-group {
+  margin-bottom: 20px;
+}
+
+.control-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.control-group textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #555;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  resize: vertical;
+  box-sizing: border-box;
+}
+
+.control-group input[type="color"] {
+  width: 50px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.control-group input[type="range"] {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.control-group span {
+  margin-left: 10px;
+  font-family: monospace;
+}
+
+.config-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.config-buttons button {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  background: #4a9eff;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.config-buttons button:hover {
+  background: #3a8eee;
+}
+
+.config-buttons button:last-child {
+  background: #6c757d;
+}
+
+.config-buttons button:last-child:hover {
+  background: #5a6268;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .config-container {
+    padding: 20px;
+    margin: 10px;
+  }
+
+  .config-buttons {
+    flex-direction: column;
+  }
+}
